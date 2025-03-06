@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem de Lixo</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Reciclagem de Lixo</h1>
+        <nav>
+            <ul>
+                <li><a href="#empresas">Empresas</a></li>
+                <li><a href="#pontuacao">Pontuação</a></li>
+                <li><a href="#ranking">Ranking</a></li>
+                <li><a href="#denuncias">Denúncias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="empresas">
+        <h2>Empresas com Pontos de Coleta</h2>
+        <div class="empresas-container">
+            <!-- Empresa 1 -->
+            <div class="empresa">
+                <img src="image/1.png" alt="Logo Empresa 1">
+                <h3>Empresa 1</h3>
+                <a href="https://superhiper.com.br/vitoria-supermercados-inaugura-mais-uma-unidade-em-manaus/" target="_blank">Visitar Site</a>
+            </div>
+    
+            <!-- Empresa 2 -->
+            <div class="empresa">
+                <img src="image/2.jpg" alt="Logo Empresa 2">
+                <h3>Empresa 2</h3>
+                <a href="https://www.portaldoholanda.com.br/manaus/rede-de-supermercados-inaugura-6-unidade-em-manaus-no-bairro-japiim" target="_blank">Visitar Site</a>
+            </div>
+    
+            <!-- Empresa 3 -->
+            <div class="empresa">
+                <img src="image/3.jpg" alt="Logo Empresa 3">
+                <h3>Empresa 3</h3>
+                <a href="https://portalmaloca.com.br/supermercado-de-manaus-e-o-primeiro-da-regiao-norte-a-aceitar-pagamento-em-criptomoedas/" target="_blank">Visitar Site</a>
+            </div>
+    
+            <!-- Empresa 4 -->
+            <div class="empresa">
+                <img src="image/4.jpg" alt="Logo Empresa 4">
+                <h3>Empresa 4</h3>
+                <a href="https://emtempo.com.br/247133/sem-categoria/em-manaus-rede-de-supermercados-se-torna-ponto-de-coleta-de-doacoes-para-o-rs/" target="_blank">Visitar Site</a>
+            </div>
+    
+            <!-- Empresa 5 -->
+            <div class="empresa">
+                <img src="image/5.jpg" alt="Logo Empresa 5">
+                <h3>Empresa 5</h3>
+                <a href="https://superhiper.com.br/supermercado-nova-era-inaugura-mais-uma-unidade-em-manaus/" target="_blank">Visitar Site</a>
+            </div>
+    
+            <!-- Empresa 6 -->
+            <div class="empresa">
+                <img src="image/6.jpg" alt="Logo Empresa 6">
+                <h3>Empresa 6</h3>
+                <a href="https://g1.globo.com/am/amazonas/especial-publicitario/rede-amazonica/noticia/2024/11/27/super-nova-inaugura-nesta-quinta-2811-sua-nova-loja-no-parque-mosaico-em-manaus.ghtml" target="_blank">Visitar Site</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <h2>Pontos de Coleta em Manaus</h2>
+        <div id="map" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+    </section>
+
+    <section id="pontuacao">
+        <h2>Pontuação</h2>
+        <p>Quantos litros de lixo você já reciclou?</p>
+        <form id="form-pontuacao">
+            <label for="litros">Litros reciclados:</label>
+            <input type="number" id="litros" name="litros" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="total-pontos">Total de pontos: 0</p>
+    </section>
+
+    <section id="ranking">
+        <h2>Ranking de Contribuição</h2>
+        <table id="tabela-ranking">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados do ranking serão adicionados aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="denuncias">
+        <h2>Denúncias de Lixeiras Viciadas</h2>
+        <form id="form-denuncia">
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" name="localizacao" required>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 - Reciclagem de Lixo</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDhzPhIXlL-MkkQmi2ahpi71kKQwXYsA6I&callback=initMap" async defer></script>
+</body>
+</html>

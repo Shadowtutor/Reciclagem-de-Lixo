@@ -1,0 +1,313 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empresas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.empresa {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#tabela-ranking {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-ranking th, #tabela-ranking td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-ranking th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tabela-ranking tr:hover {
+    background-color: #f5f5f5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*Adcionando estilos para as empresas*/
+/* Estilos para as empresas */
+.empresa img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.empresa h3 {
+    margin: 10px 0;
+}
+
+.empresa a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.empresa a:hover {
+    background-color: #45a049;
+}
+
+/*Estilizando ranking e Denuncia*/
+/* Estilos para a seção de denúncias */
+#denuncias {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form-denuncia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-denuncia label {
+    font-weight: bold;
+    color: #333;
+}
+
+#form-denuncia input,
+#form-denuncia textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form-denuncia textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#form-denuncia button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Define a largura automática */
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+#form-denuncia button:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para a seção de ranking */
+#ranking {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabela-ranking {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-ranking th,
+#tabela-ranking td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-ranking th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+#tabela-ranking tr:hover {
+    background-color: #f5f5f5;
+}
+
+#tabela-ranking tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela-ranking tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+
+/* Estilos para a seção de pontuação */
+#pontuacao {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#pontuacao h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#form-pontuacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-pontuacao label {
+    font-weight: bold;
+    color: #333;
+}
+
+#form-pontuacao input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form-pontuacao button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Define a largura automática */
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+#form-pontuacao button:hover {
+    background-color: #45a049;
+}
+
+#total-pontos {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Estilos para a tabela de ranking */
+#tabela-ranking {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-ranking th,
+#tabela-ranking td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-ranking th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+#tabela-ranking tr:hover {
+    background-color: #f5f5f5;
+}
+
+#tabela-ranking tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela-ranking tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+/* Estilos para mensagens de feedback */
+.mensagem {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.mensagem.sucesso {
+    background-color: #4CAF50;
+}
+
+.mensagem.erro {
+    background-color: #f44336;
+}
